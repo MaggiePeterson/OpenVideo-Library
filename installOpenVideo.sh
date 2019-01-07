@@ -1,10 +1,8 @@
 cwd=$(pwd)
 
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-Brew install cmake
-Brew install pkgconfig
+sudo apt-get install build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
 
-brew install libusb
+sudo apt-get install libusb
 git clone https://github.com/ktossell/libuvc.git
 cd libuvc
 mkdir build
@@ -15,8 +13,7 @@ sudo make install
 
 cd ..
 cd ..
-brew tap homebrew/science
-brew install opencv3
+sudo apt-get install opencv3
 
 git clone https://github.com/MaggiePeterson/OpenVideo-Library.git
 
