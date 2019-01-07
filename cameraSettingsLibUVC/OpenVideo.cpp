@@ -8,7 +8,6 @@
 
 #include <stdio.h>
 #include "OpenVideo.h"
-Mat frame; //current frame
 char keyboard; //input from keyboard
 
 /* This callback function runs once per frame. Use it to perform any
